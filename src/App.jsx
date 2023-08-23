@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import readme from './readme';
-
 import profile_photo from "./assets/images/profile_no_bg.png"
-import musa1 from "./assets/images/musa1.jpg"
-import musa2 from "./assets/images/musa2.jpg"
+import musa from "./assets/images/musa1.jpg"
+import musajoof from "./assets/images/musa2.jpg"
 
 import logo from "./assets/images/my_logo.jpg"
 import ContactImage from './assets/images/phone.svg'
@@ -84,13 +82,13 @@ function App() {
     {
       name: "Muhammed Fatty",
       Institution: "Gambia Police",
-      Image: musa1,
+      Image: musa,
       Text: "You making me get in love with programming and i want to join JCC to be a developer. Please share with me their contacts!!!"
     },
     {
       name: "Bubacarr Jarju",
       Institution: "Gambia Maritime",
-      Image: musa2,
+      Image: musajoof,
       Text: "Ihad about this JCC long time but i don't actually know what they were all about, because of you am confedence that they are doing a greate job."
     }
   ];
@@ -98,7 +96,7 @@ function App() {
   return (
     <>
      <div>
-        <header className="border-2 bg-slate-400 text-white p-5" id='home'>
+        <header className="border-2 bg-primary text-white p-5" id='home'>
           <div className="flex justify-between items-center  ">
             <div className="flex text-center">
               <img className="border-2 rounded-full w-20 h-20 mr-2" src={logo} alt=" logo" />
@@ -135,12 +133,12 @@ function App() {
                 <h2 className="text-[50px] font-bold">Hello, i'm <strong className="text-yellow-400 font-bold">Musa Joof</strong></h2>
                 <p> I'm a young developer at JCC currently workin at the Gambia Immigration Department and posted at the Passport office</p>
 
-                <button className="w-40 h-14 border-2 bg-white text-slate-700 rounded-md p-2 ml-3 font-bold cursor-pointer mt-4"> 
+                <button className="w-40 h-14 border-none bg-tertially shadow-md hover:bg-complimentry hover:text-secondary shadow-white text-white rounded-md p-2 ml-3 font-bold cursor-pointer mt-4"> 
                   <li className="mr-3 font-bold cursor-pointer list-none">
                       <a href="#about">About Me</a>
                   </li>
                 </button>
-                <button className="w-40 h-14 border-2 bg-white text-slate-700 rounded-md p-2 ml-3 font-bold cursor-pointer mt-4">
+                <button className="w-40 h-14 border-none bg-tertially shadow-md hover:bg-complimentry hover:text-secondary shadow-white text-white rounded-md p-2 ml-3 font-bold cursor-pointer mt-4">
                   <a href="https://drive.google.com/file/d/1cz5nxtc7k9EnO42iVk70aZurHT2zLBOK/view?usp=drive_link" target="_blank" download="Musa Joof - ITLA 5 Day Python Marathon.pdf" rel="noopener noreferrer">
                     Download My CV
                   </a>
@@ -161,20 +159,20 @@ function App() {
           {/* About Me start here */}
           <div className="flex justify-between items-center mt-10 p-5 gap-x-4" id='about'>
             <div className="w-1/2 -mt-36 ">
-              <div className="border-2 w-72 h-96 relative top-40 bg-slate-400 rounded-xl shadow-slate-300 shadow-lg"></div>
+              <div className="border-none w-72 h-96 relative top-40 bg-primary rounded-xl shadow-secondary shadow-lg"></div>
               <img className="h-96 m-auto relative right-36 bottom-40 " src={profile_photo} alt={"prolife photo"} />
             </div>
               <img className="absolute w-20 " src={blobImageBig} alt={"Blob Image"} />
               <img className="absolute left-[450px] bottom w-32 " src={blobImageMedium} alt={"Blob Image"} />
               <img className="absolute w-32 right-10 top-[540px]" src={blobImageSmall} alt={"Blob Image"} />
             <div className="w-1/2 -mt-36">
-              <h3 className="text-yellow-400 font-bold">About Me</h3>
-              <h2 className="text-slate-700 font-bold text-3xl">
+              <h3 className="text-secondary text-2xl mb-5 font-bold">About Me</h3>
+              <h2 className="text-secondary font-bold text-3xl">
                 Hi, a'm a student at JCC and my instructor is Omar Jasseh and the CEO. when i joined, i got little knowledge about programming but with the help of Omar and the team i'm able to start a project from scretch to finish.
               </h2>
-              <p className="text-slate-600 font-thin text-sm">whiles am a sudent at JCC am also working at the Gambia Immigration Department which i joined in 2011. i did my training at Tanjeh which we were the first batch to be trained there and after 6 months of succesfull training, we did our passing out and then deployed to aour verious stations. Am currently posted at the Biometric passport office since 2014 for the issurance of passports to Gambians.</p>
+              <p className="text-secondary font-thin text-sm">whiles am a sudent at JCC am also working at the Gambia Immigration Department which i joined in 2011. i did my training at Tanjeh which we were the first batch to be trained there and after 6 months of succesfull training, we did our passing out and then deployed to aour verious stations. Am currently posted at the Biometric passport office since 2014 for the issurance of passports to Gambians.</p>
 
-              <button className="w-40 h-14 border-2 bg-slate-600 text-white rounded-md p-2 ml-3 font-bold cursor-pointer mt-4">
+              <button className="w-40 h-14 border-2 border-none bg-tertially shadow-md hover:bg-complimentry hover:text-secondary shadow-secondary text-white rounded-md p-2 ml-3 font-bold cursor-pointer mt-4">
                 <a href="/readme" target="_blank" rel="noopener noreferrer" id="read">Read Me</a>
               </button>
 
@@ -183,65 +181,65 @@ function App() {
           </div>
 
           {/* Skills section start here */}
-          <div className="p-5 mt-5 bg-slate-100" id='skills'>
-            <div className="m-auto w-[600px] text-center text-slate-700">
-              <h1 className="text-yellow-400 font-bold text-lg">My Skills</h1>
+          <div className="p-5 mt-5 bg-primary" id='skills'>
+            <div className="m-auto w-[600px] text-center text-white">
+              <h1 className="text-white font-bold text-2xl mb-5">My Skills</h1>
               <p className="text-2xl font-semibold">JCC help me accure knowledge on the following below that makes you a developer and help you create an App or a website. check it out, and you will like them</p>
             </div>
             <div className="flex justify-between items-center gap-x-5 mt-5">
-              <div className="border-2 w-2/6 h-96 text-center rounded-md shadow-black shadow-md bg-slate-300 text-white p-5">
-                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white mt-5">
+              <div className="border-2 w-2/6 h-96 text-center rounded-md shadow-black shadow-md bg-tertially text-white p-5">
+                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white">
                   <img className="w-14 m-auto" src={htmlIcon} alt={"My icon"} />
                 </div>
-                <h2 className="text-2xl mt-4 font-bold">HTML</h2>
-                <p className="text-xl font-semibold text-slate-800 mt-2">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. </p>
+                <h2 className="text-2xl mt-4 font-bold text-white">HTML</h2>
+                <p className="text-xl font-semibold white mt-2">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. </p>
               </div>
-              <div className="border-2 w-2/6 h-96 text-center rounded-md shadow-black shadow-md bg-slate-300 text-white p-5">
-                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white mt-5">
+              <div className="border-2 w-2/6 h-96 text-center rounded-md shadow-black shadow-md bg-tertially text-white p-5">
+                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white">
                   <img className="w-14 m-auto" src={cssIcon} alt={"My icon"} />
                 </div>
-                <h2 className="text-2xl mt-4 font-bold">CSS</h2>
-                <p className="text-xl font-semibold text-slate-800 mt-2">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+                <h2 className="text-2xl mt-4 font-bold text-white">CSS</h2>
+                <p className="text-xl font-semibold text-white mt-2">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
               </div>
-              <div className="border-2 w-2/6 h-96 text-center rounded-md shadow-black shadow-md bg-slate-300 text-white p-5">
-                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white mt-5">
+              <div className="border-2 w-2/6 h-96 text-center rounded-md shadow-black shadow-md bg-tertially text-white p-5">
+                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white">
                   <img className="w-14 m-auto" src={jsIcon} alt={"My icon"} />
                 </div>
                 <h2 className="text-2xl mt-4 font-bold">JavaScript</h2>
-                <p className="text-xl font-semibold text-slate-800 mt-2">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.</p>
+                <p className="text-xl font-semibold text-white mt-2">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.</p>
               </div>
             </div>
 
-            <h1 className="text-2xl mt-5 underline font-bold block text-center text-yellow-400">Additional freamworks</h1>
+            <h1 className="text-2xl mt-5 underline font-bold block text-center text-white">Additional frameworks</h1>
             <div className="flex justify-between items-center gap-x-5 mt-4">
-              <div className="w-1/4 h-96 bg-slate-300 text-white rounded-md text-center shadow-black shadow-md">
-                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white mt-5">
+              <div className="w-1/4 h-96 bg-tertially text-white rounded-md text-center shadow-black shadow-md">
+                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md mt-5 bg-white">
                     <img className="w-14 m-auto" src={boostrapIcon} alt={"My icon"} />
                 </div>
-                  <h2 className="text-2xl mt-4 font-bold">Bootstrap</h2>
-                  <p className="text-xl font-semibold text-slate-800 mt-2">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+                  <h2 className="text-2xl mt-4 font-bold text-white">Bootstrap</h2>
+                  <p className="text-xl font-semibold text-white mt-2">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
               </div>
-              <div className="w-1/4 h-96 bg-slate-300 text-white rounded-md text-center shadow-black shadow-md">
-                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white mt-5">
+              <div className="w-1/4 h-96 bg-tertially text-white rounded-md text-center shadow-black shadow-md">
+                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md mt-5 bg-white">
                     <img className="w-14 m-auto" src={tailwindIcon} alt={"My icon"} />
                 </div>
                 <h2 className="text-2xl mt-4 font-bold">Tailwing</h2>
-                <p className="text-xl font-semibold text-slate-800 mt-2">Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables.</p>
+                <p className="text-xl font-semibold text-white mt-2">Tailwind CSS is an open source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables.</p>
               </div>
-              <div className="w-1/4 h-96 bg-slate-300 text-white rounded-md text-center shadow-black shadow-md overflow-auto">
-                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white mt-5">
+              <div className="w-1/4 h-96 bg-tertially text-white rounded-md text-center shadow-black shadow-md overflow-auto">
+                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md mt-5 bg-white">
                   <img className="w-14 m-auto" src={reactIcon} alt={"My icon"} />
                 </div>
-                <h2 className="text-2xl mt-4 font-bold">React</h2>
-                <p className="text-xl font-semibold text-slate-800 mt-2">React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js.</p>
+                <h2 className="text-2xl mt-4 font-bold text-white">React</h2>
+                <p className="text-xl font-semibold text-white mt-2">React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js.</p>
               </div>
  
-              <div className="w-1/4 h-96 bg-slate-300 text-white rounded-md text-center shadow-black shadow-md overflow-auto">
-                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white mt-5">
+              <div className="w-1/4 h-96 bg-tertially text-white rounded-md text-center shadow-black shadow-md overflow-auto">
+                <div className="border-2 p-2 w-20 m-auto h-20 rounded-md mt-5 bg-white">
                   <img className="w-14 m-auto" src={nodeIcon} alt={"My icon"} />
                 </div>
-                <h2 className="text-2xl mt-4 font-bold">Nodejs</h2>
-                <p className="text-xl font-semibold text-slate-800 mt-2">Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.</p>
+                <h2 className="text-2xl mt-4 font-bold text-white">Nodejs</h2>
+                <p className="text-xl font-semibold text-white mt-2">Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.</p>
               </div>
             </div>
           </div>
@@ -249,8 +247,8 @@ function App() {
           {/* Works starts here */}
           <div className="mt-5 p-5" id='works'>
             <div className="w-3/4 mt-5 p-3 text-center m-auto">
-              <h1 className="text-center text-2xl text-yellow-400 font-bold">My Latest Work</h1>
-              <p className="mt-5 text-lg text-slate-700 font-bold">Check out for the latest work and projects that i created at JCC from the following platform and frame works that includes HTML, CSS, React, Tailwind, Node etc. please share with me your feedback, it will be usefull for our subsequent works. </p>
+              <h1 className="text-center text-2xl text-secondary font-bold">My Latest Work</h1>
+              <p className="mt-5 text-lg text-secondary font-bold">Check out for the latest work and projects that i created at JCC from the following platform and frame works that includes HTML, CSS, React, Tailwind, Node etc. please share with me your feedback, it will be usefull for our subsequent works. </p>
             </div>
             <div className="flex justify-between items-center gap-x-5 mt-5">
               <div className="border-2 w-80 h-96  rounded-md bg-slate-300 text-white shadow-black shadow-md ">
@@ -284,24 +282,24 @@ function App() {
           </div>
 
           {/* Testimonial Start here */}
-          <div className="mt-10 bg-slate-400" id='testimonials'>
+          <div className="mt-10 bg-primary" id='testimonials'>
           <div className="w-3/4 mt-5 p-3 text-center m-auto">
-              <h1 className="text-center text-2xl text-yellow-400 font-bold">Testimonials</h1>
-              <p className="mt-5 text-lg text-slate-700 font-bold">Check out for the testimonials from followers!!! </p>
+              <h1 className="text-center text-2xl text-white font-bold">Testimonials</h1>
+              <p className="mt-5 text-lg text-white font-bold">Check out for the testimonials from followers!!! </p>
           </div>
-          <div className="w-3/4 h-96 m-auto border-2 rounded-t-[50%] shadow-yellow-400 shadow-md bg-yellow-400 text-center">
+          <div className="w-3/4 h-96 m-auto border-none p-3 rounded-t-[50%] shadow-white shadow-xl bg-tertially text-center">
             <div className="w-24 h-24 m-auto mt-5 rounded-full p-2 bg-white">
               <img className='w-20 h-20 m-auto rounded-full' src={testimonials[currentTestimonialIndex].Image} alt="" />
             </div>
 
-            <div className="w-3/4 h-64 mt-2  m-auto rounded-md text-slate-700 text-lg font-bold">
+            <div className="w-3/4 h-64 mt-2  m-auto rounded-md text-white text-lg font-bold">
               <span className="block mt-5 text-2xl">My name is: {testimonials[currentTestimonialIndex].name}</span>
               <span className="block mt-2">Instittion: {testimonials[currentTestimonialIndex].Institution}</span>
               <span className="block mt-2 text-sm"> {testimonials[currentTestimonialIndex].Text}</span>
-              <div className="mt-3 flex justify-center items-center">
+              <div className="mt-3 flex justify-center items-center ">
                 <button
                   onClick={() => setCurrentTestimonialIndex((currentTestimonialIndex + 1) % testimonials.length)}
-                  className="font-bold cursor-pointer text-yellow-400 p-2 bg-white rounded-lg"
+                  className="w-48 h-12 font-bold cursor-pointer border-none bg-primary shadow-md hover:bg-complimentry hover:text-secondary shadow-white text-white rounded-lg"
                 >
                   Next Testimonial
                 </button>
@@ -312,19 +310,19 @@ function App() {
 
 
           {/* Contact start here */}
-          <div className="p-5 mt-5 bg-slate-100" id='contacts'>
+          <div className="p-5 mt-5 bg-tertially" id='contacts'>
             <div className="flex justify-around items-center">
               <div className="w-56 h-28 rounded-md p-2 bg-white text-slate-700 text-lg font-bold border-2 text-center">
                 <img className="m-auto" src={ContactImage} alt="Contack Image" />
                 <h3>Contact:</h3>
-                <p> 7145920/7666554</p>
+                <p> 7145920/5847203</p>
               </div>
               <div className="w-56 h-28 rounded-md p-2 bg-white text-slate-700 text-lg font-bold border-2 text-center">
                 <img className="m-auto" src={FaxImage} alt="Contack Image" />
                 <h3>Fax:</h3>
-                <p> 7145920/7666554</p>
+                <p> 7145920/5847203</p>
               </div>
-              <div className="w-56 h-28 rounded-md p-2 bg-white text-slate-700 text-lg font-bold border-2 text-center">
+              <div className="w-56 h-28 rounded-md p-1 bg-white text-slate-700 text-lg font-bold border-2 text-center">
                 <img className="m-auto" src={EmailtImage} alt="Contack Image" />
                 <h3>Email:</h3>
                 <p> musajoof447@gmail.com</p>
@@ -367,7 +365,7 @@ function App() {
                     />
                   </div>
                   <button 
-                    className="w-40 h-14 border-2 bg-slate-600 text-white rounded-md p-2 font-bold cursor-pointer mt-4"
+                    className="w-40 h-14  border-none bg-secondary shadow-md hover:bg-complimentry hover:text-secondary shadow-white text-white rounded-md p-2 font-bold cursor-pointer mt-4"
                     type='submit'
                     onClick={handleFormSubmit}
                   >
@@ -376,14 +374,29 @@ function App() {
                 </form>
 
                 <div className="w-2/5 p-2 ">
-                  <h1 className="w-40 h-14 border-2 bg-slate-600 text-white rounded-md p-2 font-bold cursor-pointer mb-3">Let's Get In Touch</h1>
-                  <p className="text-slate-700 text-xl mb-5 font-bold">Joofen Technology</p>
-                  <p className="text-slate-700">please if you want to be a developer, join JCC and you not regreate it. if want a junior developer we are at your door step</p>
+                  <button className="w-40 h-14 border-none bg-secondary shadow-md hover:bg-complimentry hover:text-secondary shadow-white text-white rounded-md p-2 font-bold cursor-pointer mb-3"
+                  >
+                    Let's Get In Touch
+                  </button>
+                  <p className="text-white text-xl mb-5 font-bold">Joofen Technology</p>
+                  <p className="text-white">Please if you want to be a developer, join JCC and you not regreate it. if want a junior developer we are at your door step</p>
                   <div className="flex justify-between items-center mt-5 cursor-pointer">
-                    <img className="cursor-pointer " src={FacebookImage} alt="FaceBookImage" />
-                    <img className='cursor-pointer ' src={TwitterImage} alt="TwitterImage" />
-                    <img className='cursor-pointer ' src={WhatsAppImage} alt="WhatsAppImage" />
-                    <img className='cursor-pointer ' src={LinkinImage} alt="LinkinImage" />
+                    <a href="https://www.facebook.com/musa.joof.75641pl" target='_blank'>
+                      <img className="cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary" src={FacebookImage} alt="FaceBookImage" />
+                    </a>
+                    
+                    <a href="https://twitter.com/musajoof447" target='_blank'>
+                    <img className='cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={TwitterImage} alt="TwitterImage" />
+                    </a>
+
+                    <a className='text-center mt-5'>
+                    <img className='cursor-pointer m-auto border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={WhatsAppImage} alt="WhatsAppImage" />
+                      <span className=' font-bold m-auto text-white'>7145920</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/musa-joof-b81a82247" target='_blank'>
+                    <img className='cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={LinkinImage} alt="LinkinImage" />
+                    </a>
                   </div>
                 </div>
             </div>
@@ -391,7 +404,7 @@ function App() {
 
         </main>
 
-        <footer className="border-2 bg-slate-400 text-white p-5 text-center mt-5">
+        <footer className="border-2 bg-secondary text-white p-5 text-center mt-5">
           <div className="flex justify-around items-center gap-x-3">
             <div>
               <ul className="flex mr-3 mt-10">
@@ -417,16 +430,28 @@ function App() {
             </div>
             <img className="absolute w-20 " src={blobImageBig} alt={"Blob Image"} />
             <div className="flex justify-around items-center gap-x-3 mt-10">
-              <img className="contact-image" src={ContactImage} alt="Contack Image" />
-              <img className="contact-image" src={FaxImage} alt="Contack Image" />
-              <img className="contact-image" src={EmailtImage} alt="Contack Image" />
-              <img className='cursor-pointer' src={FacebookImage} alt="FaceBookImage" />
-              <img className='cursor-pointer' src={TwitterImage} alt="TwitterImage" />
-              <img className='cursor-pointer' src={WhatsAppImage} alt="WhatsAppImage" />
-              <img className='cursor-pointer' src={LinkinImage} alt="LinkinImage" />
+              <img className="contact-image border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary" src={ContactImage} alt="Contack Image" />
+              <img className="contact-image border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary" src={FaxImage} alt="Contack Image" />
+              <img className="contact-image border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary" src={EmailtImage} alt="Contack Image" />
+              <a href="https://www.facebook.com/musa.joof.75641pl" target='_blank'>
+                <img className="cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary" src={FacebookImage} alt="FaceBookImage" />
+              </a>
+                    
+              <a href="https://twitter.com/musajoof447" target='_blank'>
+                <img className='cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={TwitterImage} alt="TwitterImage" />
+              </a>
+
+              <a className='text-center mt-5 '>
+                <img className='cursor-pointer m-auto border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={WhatsAppImage} alt="WhatsAppImage" />
+                  <span className='mt-2 font-bold m-auto'>7145920</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/musa-joof-b81a82247" target='_blank'>
+                <img className='cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={LinkinImage} alt="LinkinImage" />
+              </a>
             </div>
           </div>
-          <p className="mt-10 text-lg">&copy; Develop By Musa Joof {currentyear}, All Right Reserved</p>
+          <p className="mt-10 text-lg font-bold">&copy; Develop By Musa Joof {currentyear}, All Right Reserved</p>
 
         </footer>
      </div>
