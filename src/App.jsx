@@ -166,7 +166,7 @@ function App() {
               <img className="absolute left-[450px] bottom w-32 " src={blobImageMedium} alt={"Blob Image"} />
               <img className="absolute w-32 right-10 top-[540px]" src={blobImageSmall} alt={"Blob Image"} />
             <div className="w-1/2 -mt-36">
-              <h3 className="text-secondary text-2xl mb-5 font-bold">About Me</h3>
+              <h3 className="text-secondary text-2xl mb-5 font-extrabold font-serif">About Me</h3>
               <h2 className="text-secondary font-bold text-3xl">
                 Hi, a'm a student at JCC and my instructor is Omar Jasseh and the CEO. when i joined, i got little knowledge about programming but with the help of Omar and the team i'm able to start a project from scretch to finish.
               </h2>
@@ -183,25 +183,25 @@ function App() {
           {/* Skills section start here */}
           <div className="p-5 mt-5 bg-primary" id='skills'>
             <div className="m-auto w-[600px] text-center text-white">
-              <h1 className="text-white font-bold text-2xl mb-5">My Skills</h1>
+              <h1 className="text-white font-bold text-2xl mb-5 font-serif">My Skills</h1>
               <p className="text-2xl font-semibold">JCC help me accure knowledge on the following below that makes you a developer and help you create an App or a website. check it out, and you will like them</p>
             </div>
             <div className="flex justify-between items-center gap-x-5 mt-5">
-              <div className="border-2 w-2/6 h-96 text-center rounded-md shadow-black shadow-md bg-tertially text-white p-5">
+              <div className="border-2 w-2/6 h-96 text-center rounded-md shadow-black shadow-md bg-tertially text-white p-5 overflow-auto">
                 <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white">
                   <img className="w-14 m-auto" src={htmlIcon} alt={"My icon"} />
                 </div>
                 <h2 className="text-2xl mt-4 font-bold text-white">HTML</h2>
                 <p className="text-xl font-semibold white mt-2">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. </p>
               </div>
-              <div className="border-2 w-2/6 h-96 text-center rounded-md shadow-black shadow-md bg-tertially text-white p-5">
+              <div className="border-2 w-2/6 h-96 text-center rounded-md shadow-black shadow-md bg-tertially text-white p-5 overflow-auto">
                 <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white">
                   <img className="w-14 m-auto" src={cssIcon} alt={"My icon"} />
                 </div>
                 <h2 className="text-2xl mt-4 font-bold text-white">CSS</h2>
                 <p className="text-xl font-semibold text-white mt-2">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
               </div>
-              <div className="border-2 w-2/6 h-96 text-center rounded-md shadow-black shadow-md bg-tertially text-white p-5">
+              <div className="border-2 w-2/6 h-96 text-center rounded-md shadow-black shadow-md bg-tertially text-white p-5 overflow-auto">
                 <div className="border-2 p-2 w-20 m-auto h-20 rounded-md bg-white">
                   <img className="w-14 m-auto" src={jsIcon} alt={"My icon"} />
                 </div>
@@ -212,7 +212,7 @@ function App() {
 
             <h1 className="text-2xl mt-5 underline font-bold block text-center text-white">Additional frameworks</h1>
             <div className="flex justify-between items-center gap-x-5 mt-4">
-              <div className="w-1/4 h-96 bg-tertially text-white rounded-md text-center shadow-black shadow-md">
+              <div className="w-1/4 h-96 bg-tertially text-white rounded-md text-center shadow-black shadow-md overflow-auto">
                 <div className="border-2 p-2 w-20 m-auto h-20 rounded-md mt-5 bg-white">
                     <img className="w-14 m-auto" src={boostrapIcon} alt={"My icon"} />
                 </div>
@@ -247,7 +247,7 @@ function App() {
           {/* Works starts here */}
           <div className="mt-5 p-5" id='works'>
             <div className="w-3/4 mt-5 p-3 text-center m-auto">
-              <h1 className="text-center text-2xl text-secondary font-bold">My Latest Work</h1>
+              <h1 className="text-center text-2xl text-secondary font-bold font-serif">My Latest Work</h1>
               <p className="mt-5 text-lg text-secondary font-bold">Check out for the latest work and projects that i created at JCC from the following platform and frame works that includes HTML, CSS, React, Tailwind, Node etc. please share with me your feedback, it will be usefull for our subsequent works. </p>
             </div>
             <div className="flex justify-between items-center gap-x-5 mt-5">
@@ -284,7 +284,7 @@ function App() {
           {/* Testimonial Start here */}
           <div className="mt-10 bg-primary" id='testimonials'>
           <div className="w-3/4 mt-5 p-3 text-center m-auto">
-              <h1 className="text-center text-2xl text-white font-bold">Testimonials</h1>
+              <h1 className="text-center text-2xl text-white font-bold font-serif">Testimonials</h1>
               <p className="mt-5 text-lg text-white font-bold">Check out for the testimonials from followers!!! </p>
           </div>
           <div className="w-3/4 h-96 m-auto border-none p-3 rounded-t-[50%] shadow-white shadow-xl bg-tertially text-center">
@@ -311,7 +311,8 @@ function App() {
 
           {/* Contact start here */}
           <div className="p-5 mt-5 bg-tertially" id='contacts'>
-            <div className="flex justify-around items-center">
+          <h1 className="text-center text-2xl text-white font-bold font-serif">Contact Me</h1>
+            <div className="flex justify-around items-center mt-5">
               <div className="w-56 h-28 rounded-md p-2 bg-white text-slate-700 text-lg font-bold border-2 text-center">
                 <img className="m-auto" src={ContactImage} alt="Contack Image" />
                 <h3>Contact:</h3>
@@ -328,131 +329,181 @@ function App() {
                 <p> musajoof447@gmail.com</p>
               </div>
             </div>
+              <div className="p-5 flex justify-around items-center ">             
+                  <form className="p-2 w-2/5 " action="/">
+                    <div className="mt-3">
+                      <label className="block font-bold text-lg" htmlFor="email" id="email">Email</label>
+                      <input 
+                        className="border-b-2 w-full h-14 rounded-md p-2" 
+                        type="text" 
+                        name="email"  
+                        value={email}
+                        title='Enter your email address'
+                        onChange={(event) => setEmail(event.target.value)}
+                        placeholder="Enter your email address"
+                      />
+                    </div>
+                    <div className="mt-3">
+                      <label className="block font-bold text-lg" htmlFor="password" id="password">Password</label>
+                      <input 
+                        className="border-b-2 w-full h-14 rounded-md p-2" 
+                        type="text" 
+                        name="password" 
+                        value={password} 
+                        title='Enter your password'
+                        onChange={(event) => setPassword(event.target.value)}
+                        placeholder="Enter your password"
+                      />
+                    </div>
+                    <div className="mt-3">
+                      <label className="block mb-3 font-bold text-lg" htmlFor="email" id="email">Message</label>
+                      <textarea 
+                        className="border-b-2 w-full h-48 rounded-md p-2" 
+                        type="textarea" 
+                        name="texarea" 
+                        value={message}
+                        title='Enter your message'
+                        onChange={(event) => setMessage(event.target.value)}
+                        placeholder="Enter your message"
+                      />
+                    </div>
+                    <button 
+                      className="w-40 h-14  border-none bg-secondary shadow-md hover:bg-complimentry hover:text-secondary shadow-white text-white rounded-md p-2 font-bold cursor-pointer mt-4"
+                      type='submit'
+                      onClick={handleFormSubmit}
+                    >
+                      Submit
+                    </button>
+                  </form>
 
-            <div className="p-5 flex justify-around items-center ">
-                <form className="p-2 w-2/5 " action="/">
-                  <div className="mt-3">
-                    <label className="block font-bold text-lg" htmlFor="email" id="email">Email</label>
-                    <input 
-                      className="border-b-2 w-full h-14 rounded-md p-2" 
-                      type="text" 
-                      name="email"  
-                      value={email}
-                      onChange={(event) => setEmail(event.target.value)}
-                      placeholder="Enter your email address"
-                    />
-                  </div>
-                  <div className="mt-3">
-                    <label className="block font-bold text-lg" htmlFor="password" id="password">Password</label>
-                    <input 
-                      className="border-b-2 w-full h-14 rounded-md p-2" 
-                      type="text" 
-                      name="password" 
-                      value={password} 
-                      onChange={(event) => setPassword(event.target.value)}
-                      placeholder="Enter your password"
-                    />
-                  </div>
-                  <div className="mt-3">
-                    <label className="block mb-3 font-bold text-lg" htmlFor="email" id="email">Message</label>
-                    <textarea 
-                      className="border-b-2 w-full h-48 rounded-md p-2" 
-                      type="textarea" 
-                      name="texarea" 
-                      value={message}
-                      onChange={(event) => setMessage(event.target.value)}
-                      placeholder="Enter your message"
-                    />
-                  </div>
-                  <button 
-                    className="w-40 h-14  border-none bg-secondary shadow-md hover:bg-complimentry hover:text-secondary shadow-white text-white rounded-md p-2 font-bold cursor-pointer mt-4"
-                    type='submit'
-                    onClick={handleFormSubmit}
-                  >
-                    Submit
-                  </button>
-                </form>
+                  <div className="w-2/5 p-2 ">
+                    <button className="w-40 h-14 border-none bg-secondary shadow-md hover:bg-complimentry hover:text-secondary shadow-white text-white rounded-md p-2 font-bold cursor-pointer mb-3"
+                    >
+                      Let's Get In Touch
+                    </button>
+                    <p className="text-white text-xl mb-5 font-bold">Joofen Technology</p>
+                    <p className="text-white">Please if you want to be a developer, join JCC and you not regreate it. if want a junior developer we are at your door step</p>
+                    <div className="flex justify-between items-center mt-5 cursor-pointer">
+                      <a href="https://www.facebook.com/musa.joof.75641pl" target='_blank' title='Link to my facebook'>
+                        <img className="cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary" src={FacebookImage} alt="FaceBookImage" />
+                      </a>
+                      
+                      <a href="https://twitter.com/musajoof447" target='_blank' title='Link to my twitter'>
+                      <img className='cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={TwitterImage} alt="TwitterImage" />
+                      </a>
 
-                <div className="w-2/5 p-2 ">
-                  <button className="w-40 h-14 border-none bg-secondary shadow-md hover:bg-complimentry hover:text-secondary shadow-white text-white rounded-md p-2 font-bold cursor-pointer mb-3"
-                  >
-                    Let's Get In Touch
-                  </button>
-                  <p className="text-white text-xl mb-5 font-bold">Joofen Technology</p>
-                  <p className="text-white">Please if you want to be a developer, join JCC and you not regreate it. if want a junior developer we are at your door step</p>
-                  <div className="flex justify-between items-center mt-5 cursor-pointer">
-                    <a href="https://www.facebook.com/musa.joof.75641pl" target='_blank'>
-                      <img className="cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary" src={FacebookImage} alt="FaceBookImage" />
-                    </a>
-                    
-                    <a href="https://twitter.com/musajoof447" target='_blank'>
-                    <img className='cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={TwitterImage} alt="TwitterImage" />
-                    </a>
+                      <a className='text-center mt-5' title='Link to my whatsApp'>
+                      <img className='cursor-pointer m-auto border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={WhatsAppImage} alt="WhatsAppImage" />
+                        <span className=' font-bold m-auto text-white'>7145920</span>
+                      </a>
 
-                    <a className='text-center mt-5'>
-                    <img className='cursor-pointer m-auto border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={WhatsAppImage} alt="WhatsAppImage" />
-                      <span className=' font-bold m-auto text-white'>7145920</span>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/musa-joof-b81a82247" target='_blank'>
-                    <img className='cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={LinkinImage} alt="LinkinImage" />
-                    </a>
+                      <a href="https://www.linkedin.com/in/musa-joof-b81a82247" target='_blank' title='Link to my linkein'>
+                      <img className='cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={LinkinImage} alt="LinkinImage" />
+                      </a>
+                    </div>
                   </div>
-                </div>
-            </div>
+              </div>
           </div>
 
         </main>
 
         <footer className="border-2 bg-secondary text-white p-5 text-center mt-5">
-          <div className="flex justify-around items-center gap-x-3">
-            <div>
-              <ul className="flex mr-3 mt-10">
-                <li className="mr-3 font-bold cursor-pointer">
+          <div className="flex justify-around items-start gap-x-3">
+            <div className='block mt-10 '>
+              <h1 className='text-xl font-extrabold'>Pages</h1>
+              <ul className="block mt-3">
+                <li className=" font-bold cursor-pointer">
                     <a href="#home">Home</a>
                 </li>
-                <li className="mr-3 font-bold cursor-pointer">
+                <li className=" font-bold cursor-pointer">
                     <a href="#about">About</a>
                 </li>
-                <li className="mr-3 font-bold cursor-pointer">
+                <li className=" font-bold cursor-pointer">
                     <a href="#skills">Skills</a>
                 </li>
-                <li className="mr-3 font-bold cursor-pointer">
+                <li className=" font-bold cursor-pointer">
                     <a href="#works">Works</a>
                 </li>
-                <li className="mr-3 font-bold cursor-pointer">
+                <li className=" font-bold cursor-pointer">
                   <a href="#testimonials">Testimonials</a>
                 </li>
-                <li className="mr-3 font-bold cursor-pointer">
+                <li className=" font-bold cursor-pointer">
                     <a href="#contacts">Contacts</a>
                 </li>
               </ul>
             </div>
-            <img className="absolute w-20 " src={blobImageBig} alt={"Blob Image"} />
-            <div className="flex justify-around items-center gap-x-3 mt-10">
-              <img className="contact-image border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary" src={ContactImage} alt="Contack Image" />
-              <img className="contact-image border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary" src={FaxImage} alt="Contack Image" />
-              <img className="contact-image border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary" src={EmailtImage} alt="Contack Image" />
+            <div className='block mr-3 mt-10 '>
+              <h1 className='text-xl font-extrabold'>links</h1>
               <a href="https://www.facebook.com/musa.joof.75641pl" target='_blank'>
-                <img className="cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary" src={FacebookImage} alt="FaceBookImage" />
+                <img className="cursor-pointer mt-3 border-none p-2 bg-white rounded-md hover:bg-complimentry" src={FacebookImage} alt="FaceBookImage" />
               </a>
                     
               <a href="https://twitter.com/musajoof447" target='_blank'>
-                <img className='cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={TwitterImage} alt="TwitterImage" />
+                <img className='cursor-pointer mt-3 border-none p-2 bg-white rounded-md hover:bg-complimentry ' src={TwitterImage} alt="TwitterImage" />
               </a>
 
               <a className='text-center mt-5 '>
-                <img className='cursor-pointer m-auto border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={WhatsAppImage} alt="WhatsAppImage" />
+                <img className='cursor-pointer mr-6 mt-3 m-auto border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={WhatsAppImage} alt="WhatsAppImage" />
                   <span className='mt-2 font-bold m-auto'>7145920</span>
               </a>
 
               <a href="https://www.linkedin.com/in/musa-joof-b81a82247" target='_blank'>
-                <img className='cursor-pointer border-none p-2 bg-white rounded-md hover:bg-complimentry hover:text-secondary' src={LinkinImage} alt="LinkinImage" />
+                <img className='cursor-pointer mt-3 border-none p-2 bg-white rounded-md hover:bg-complimentry ' src={LinkinImage} alt="LinkinImage" />
               </a>
             </div>
+            <div className='block mr-3 mt-10 space-y-3'>
+              <h1 className='text-xl font-extrabold'>Contacts</h1>
+              <img className="contact-image border-none p-2 bg-white rounded-md hover:bg-complimentry " src={ContactImage} alt="Contack Image" />
+              <img className="contact-image border-none p-2 bg-white rounded-md hover:bg-complimentry " src={FaxImage} alt="Contack Image" />
+              <img className="contact-image border-none p-2 bg-white rounded-md hover:bg-complimentry" src={EmailtImage} alt="Contack Image" />
+            </div>
+            <div className='block mr-3 mt-10 space-y-3'>
+              <h1 className='text-xl font-extrabold'>Skills</h1>
+              <div className="border-2 p-2 w-10 m-auto h-10 rounded-md bg-white hover:bg-complimentry">
+                <a href="https://html.com/">
+                  <img className="w-14 m-auto" src={htmlIcon} alt={"My icon"} />
+                </a>
+              </div>
+              <div className="border-2 p-2 w-10 m-auto h-10 rounded-md bg-white hover:bg-complimentry">
+                <a href="https://www.w3.org/Style/CSS/Overview.en.html">
+                  <img className="w-14 m-auto" src={cssIcon} alt={"My icon"} />
+                </a>
+              </div>
+              <div className="border-2 p-2 w-10 m-auto h-10 rounded-md bg-white hover:bg-complimentry">
+                <a href="https://www.javascript.com/">
+                  <img className="w-14 m-auto" src={jsIcon} alt={"My icon"} />
+                </a>
+              </div>
+            </div>
+            <div className='block mr-3 mt-10 space-x-3'>
+              <h1 className='text-xl font-extrabold'>Frameworks</h1>
+              <div className="border-2 p-2 w-10 m-auto h-10 rounded-md mt-5 bg-white hover:bg-complimentry">
+                <a href="https://getbootstrap.com/">
+                  <img className="w-14 m-auto" src={boostrapIcon} alt={"My icon"} />
+                </a>
+              </div>
+              <div className="border-2 p-2 w-10 m-auto h-10 rounded-md mt-5 bg-white hover:bg-complimentry">
+                <a href="https://tailwindcss.com/">
+                  <img className="w-14 m-auto" src={tailwindIcon} alt={"My icon"} />
+                </a>
+              </div>
+              <div className="border-2 p-2 w-10 m-auto h-10 rounded-md mt-5 bg-white hover:bg-complimentry">
+                <a href="https://react.dev/">
+                  <img className="w-14 m-auto" src={reactIcon} alt={"My icon"} />
+                </a>
+              </div>
+              <div className="border-2 p-2 w-10 m-auto h-10 rounded-md mt-5 bg-white hover:bg-complimentry">
+                <a href="https://nodejs.org/">
+                  <img className="w-14 m-auto" src={nodeIcon} alt={"My icon"} />
+                </a>
+              </div>
+            </div>
+
+            <img className="absolute w-20 " src={blobImageBig} alt={"Blob Image"} />
+
+            
           </div>
           <p className="mt-10 text-lg font-bold">&copy; Develop By Musa Joof {currentyear}, All Right Reserved</p>
-
         </footer>
      </div>
     </>
