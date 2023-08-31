@@ -407,7 +407,7 @@ function App() {
 
         </main>
 
-        <footer className="border-2 bg-secondary text-white p-5 text-center mt-5">
+        <footer className="border-2 rounded-t-[6rem] bg-secondary text-white p-5 text-center mt-5">
           <div className="flex justify-around items-start gap-x-3">
             <div className='block mt-10 '>
               <h1 className='text-xl font-extrabold'>Pages</h1>
@@ -499,8 +499,11 @@ function App() {
               </div>
             </div>
 
-            <img className="absolute w-20 " src={blobImageBig} alt={"Blob Image"} />
-
+            <img className="absolute w-20 mr-[900px]" src={blobImageBig} alt={"Blob Image"} />
+            <img className="absolute w-20 mr-96" src={blobImageBig} alt={"Blob Image"} />
+            <img className="absolute w-20 ml-24" src={blobImageBig} alt={"Blob Image"} />
+            <img className="absolute w-20 ml-[600px]" src={blobImageBig} alt={"Blob Image"} />
+            <img className="absolute w-20 ml-[1200px]" src={blobImageBig} alt={"Blob Image"} />
             
           </div>
           <p className="mt-10 text-lg font-bold">&copy; Develop By Musa Joof {currentyear}, All Right Reserved</p>
